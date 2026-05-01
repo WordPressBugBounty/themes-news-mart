@@ -1,0 +1,639 @@
+/*
+Theme Name: News Mart
+Theme URI: https://themearile.com/news-mart-theme/
+Template: newsexo
+Author: ThemeArile
+Author URI: https://themearile.com
+Description: News Mart is a high-performance news, blog, and magazine WordPress theme that is perfect for any Blog/Magazine, news, and even for all variants of publishers' websites. It features a unique design for a visually stunning layout that makes your content display beautifully and is easy to read on any media device. Even though it is user-friendly, SEO-ready, effortless, lightweight, and optimized for top performance and Core Web Vitals. The theme is best suited for news, newspapers, magazines, publishers, editors, news portals, personal blogs, dynamic news, business blogs, news editorials, guides, journalism, lifestyle blogs, travel blogs, niche blogs, food blogs, fashion magazines, beauty blogs, affiliate blogs, multimedia blogs, guest blogging, and review websites. It also has flexible and versatile layouts enough for essential needs, with unlimited colors, unlimited Google fonts, typography, responsive design, and Rtl language support. It is designed to be highly SEO-friendly, which can help optimize your website on search engine performance, making it easier to find for potential visitors, and the theme provides predefined beautiful demos that can be imported with one click in less time. News Mart also supports popular WordPress plugins, including WooCommerce, Contact Form 7, Jetpack, and many more. Check the demo of News Mart Pro https://newsexo-pro-thirteen.themearile.com/.
+Version: 1.4
+Tested up to: 6.9
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: news-mart
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, e-commerce, portfolio
+*/
+
+/*--------------------------------------------------
+=>> Body Custom Background Css
+--------------------------------------------------*/
+
+body.custom-background .theme-bg-dark,
+body.custom-background .theme-bg-default, 
+body.custom-background .theme-blog.theme-bg-grey {
+    background-color: transparent !important;
+}
+
+/*--------------------------------------------------
+=>> Wrapper Background Css
+--------------------------------------------------*/
+
+#wrapper {
+    background-color: #f0f1f3;
+}
+
+/*--------------------------------------------------------------
+=>> Typography Css
+--------------------------------------------------------------*/
+
+h1, h2, h3,
+h4, h5, h6 {
+	letter-spacing: 1px;
+}
+.navbar.navbar-dark .nav .menu-item .nav-link {
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: Khand;
+}
+.navbar .nav .menu-item .dropdown-item {
+	font-family: Khand;
+    letter-spacing: 1px;
+	font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+/*--------------------------------------------------------------
+=>> Site Header
+--------------------------------------------------------------*/
+
+.site-header {
+    background: #000000 !important;
+}
+.head-contact-info li, .site-header .custom-social-icons .followus {
+    color: #ffffff !important;
+}
+.custom-social-icons .followus:before, .custom-social-icons .followus:after {
+    background: #ffffff !important;
+}
+.site-header .custom-social-icons li > a {
+    color: #ffffff !important;
+}
+
+/*--------------------------------------------------------------
+=>> Site Branding & Advertisement
+--------------------------------------------------------------*/
+
+.site-branding .site-title a, 
+.site-branding .site-description {
+	color: #fff;
+}
+.site-branding .site-title a:hover, 
+.site-branding .site-title a:focus, 
+.site-branding .site-description:hover, 
+.site-branding .site-description:focus {
+	color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+=>> Big News Section - Featured News
+--------------------------------------------------------------*/
+
+/*Blog Overlay Layout Four*/
+.big-news-section .overlay-news-area.vrsn-four {
+	background-color: #fff;
+	border-radius: 9px;
+	position: relative;
+}
+.big-news-section .overlay-news-area.vrsn-four .post-thumbnail {
+	border-radius: 9px;
+}
+.big-news-section .overlay-news-area.vrsn-four .post-thumbnail img {
+	width: 100%;
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;	
+}
+.big-news-section .overlay-news-area.vrsn-four .post-thumbnail:hover img {
+	-webkit-transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+}
+/*End of vrsn-four*/
+
+/*--------------------------------------------------------------
+=>> Featured News Section
+--------------------------------------------------------------*/
+
+.featured-news-section .overlay-news-area.vrsn-four {
+	background-color: #fff;
+	border-radius: 9px;
+	position: relative;
+}
+.featured-news-section .overlay-news-area.vrsn-four .post-thumbnail {
+	border-radius: 9px;
+}
+.featured-news-section .overlay-news-area.vrsn-four .post-thumbnail:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    /* z-index: 1; */
+}
+.featured-news-section .overlay-news-area.vrsn-four .post-thumbnail:hover:after {
+	height: 250%;
+	transition: all 600ms linear;
+	background-color: transparent;
+}
+.featured-news-section .overlay-news-area.vrsn-four .post-thumbnail img {
+	width: 100%;
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;	
+}
+.featured-news-section .overlay-news-area.vrsn-four .post-thumbnail:hover img {
+	-webkit-transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+}
+/*End of vrsn-four*/
+
+/*--------------------------------------------------------------
+=>> Grid View News Section
+--------------------------------------------------------------*/
+
+/*Blog Grid Layout Four*/
+.grid-view-news-area.vrsn-four {
+	background-color: #fff;
+	padding: 0;
+	border-radius: 9px;
+	position: relative;
+	box-shadow: 2px 5px 20px rgb(0 0 0 / 7%);
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.grid-view-news-area.vrsn-four:hover {
+	transform: translateY(-7px);
+	transition: 0.4s;
+	box-shadow: 2px 5px 25px rgb(0 0 0 / 15%);
+}
+.grid-view-news-area.vrsn-four .post-thumbnail {
+	border-radius: 9px 9px 0px 0px;
+}
+.grid-view-news-area.vrsn-four .post-thumbnail:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.grid-view-news-area.vrsn-four .post-thumbnail:hover:after {
+	height: 250%;
+	transition: all 600ms linear;
+	background-color: transparent;
+}
+.grid-view-news-area.vrsn-four .post-thumbnail img {
+	width: 100%;
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;	
+}
+.grid-view-news-area.vrsn-four .post-thumbnail:hover img {
+	-webkit-transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+}
+.grid-view-news-area.vrsn-four .post-content {
+    padding: 1.563rem;
+}
+.frontpage-content .col-lg-3 .grid-view-news-area.vrsn-four .post-content { 
+	padding: 1.25rem;
+}
+body.page-template-default .blog-grid-view-post .post {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 0.938rem 0.75rem;
+}
+.post.grid-view-news-area ul.wp-block-rss {
+	list-style: disc;
+}
+
+/*--------------------------------------------------------------
+=>> List View News Section
+--------------------------------------------------------------*/
+
+/*Blog List Layout Four*/
+.list-view-news-area .post.vrsn-four {
+	background-color: #fff;
+	padding: 0;
+	border-radius: 9px;
+	position: relative;
+	box-shadow: 2px 5px 20px rgb(0 0 0 / 7%);
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.list-view-news-area .post.vrsn-four:hover {
+	transform: translateY(-7px);
+	transition: 0.4s;
+	box-shadow: 2px 5px 25px rgb(0 0 0 / 15%);
+}
+.list-view-news-area .post.vrsn-four .post-thumbnail {
+	border-radius: 9px 0px 0px 9px;
+	margin-right: 0;
+}
+.list-view-news-area .post.vrsn-four .post-thumbnail:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.list-view-news-area .post.vrsn-four .post-thumbnail:hover:after {
+	height: 250%;
+	transition: all 600ms linear;
+	background-color: transparent;
+}
+.list-view-news-area .post.vrsn-four .post-thumbnail img {
+	width: 100%;
+	-webkit-transform: scale(1) rotate(0deg);
+	-moz-transform: scale(1) rotate(0deg);
+	-ms-transform: scale(1) rotate(0deg);
+	transform: scale(1) rotate(0deg);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;	
+}
+.list-view-news-area .post.vrsn-four .post-thumbnail:hover img {
+	-webkit-transform: scale(1.1) rotate(2deg);
+    -moz-transform: scale(1.1) rotate(2deg);
+    -ms-transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1) rotate(2deg);
+}
+.list-view-news-area .post.vrsn-four .post-content {
+    padding: 1.25rem 1.25rem 1.25rem 1.563rem;
+}
+/*Blog List Layout Five*/
+@media (min-width: 200px) and (max-width: 991.98px) {
+	.list-view-news-area .post.vrsn-four .post-thumbnail {
+		border-radius: 9px 9px 0px 0px;
+	}
+	.list-view-news-area .post.vrsn-four .post-content {
+		padding: 1.25rem;
+	}
+}
+
+
+/*--------------------------------------------------------------
+=>> Blog Meta
+--------------------------------------------------------------*/
+
+.entry-meta > span { 
+	margin: 0 0.875rem 0 0 !important;
+}
+.entry-meta > span i {
+    margin-right: 0.350rem;
+}
+.entry-meta .avatar-default {
+    margin-right: 0.350rem;
+}
+/*Category Layout Four*/
+.post.vrsn-four .entry-meta .cat-links .links-bg, 
+.post.vrsn-four .entry-meta .cat-links .links-bg > span {
+	transform: skew(0deg);
+}
+.post.vrsn-four .entry-meta .cat-links .links-bg {
+	border-radius: 0px 30px 30px;
+	-webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.post.vrsn-four .entry-meta .cat-links .links-bg:hover, 
+.post.vrsn-four .entry-meta .cat-links .links-bg:focus {
+	border-radius: 30px 0px 30px 30px;
+}
+.post.vrsn-four .entry-meta .cat-links.links-space {
+    padding: 0;
+}
+/*Category Colors*/
+.entry-meta .cat-links .links-bg:nth-child(2) {
+	background: #d40004;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(3) {
+	background: #d40004;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(4) {
+	background: #d40004;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(5) {
+	background: #ff5d20;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(6) {
+	background: #0263D0;
+	color: #fff;
+}
+/*Pagination*/
+.navigation.pagination .nav-links .page-numbers, 
+.navigation.pagination .nav-links a {
+	border: 1px solid #ebebeb;
+}
+.pagination a {
+	background-color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+=>> All Blog Posts Common Classes for Spacing
+--------------------------------------------------------------*/
+
+#news-slider.vrsn-two, 
+#featured-news-slider.vrsn-two {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 0.75rem;
+}
+@media (min-width: 200px) and (max-width: 991.98px) {
+	#featured-news-slider.owl-carousel.vrsn-two .post.overlay-news-area {
+		margin-bottom: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+=>> Blog Single
+--------------------------------------------------------------*/
+
+.single-news-area .grid-view-news-area.vrsn-four {
+    padding: 1.25rem 1.563rem 1.563rem;
+}
+.single-news-area .grid-view-news-area.vrsn-four .post-thumbnail {
+	padding-top: 0;
+	margin-top: 1.563rem;
+	border-radius: 9px 9px 9px 9px;
+}
+.single-news-area .grid-view-news-area.vrsn-four .post-content {
+    padding: 1.5625rem 0 0;
+}
+.post-author-area.vrsn-four {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 1.25rem 1.563rem 1.25rem;
+	border-radius: 9px;
+	position: relative;
+	box-shadow: 2px 5px 20px rgb(0 0 0 / 7%);
+    transition: 0.4s;
+}
+.post-author-area.vrsn-four:hover {
+	transform: translateY(-7px);
+	border: 1px solid #fff;
+	box-shadow: 2px 5px 25px rgb(0 0 0 / 15%);
+}
+/*Related Posts*/
+.related-posts .grid-view-news-area.vrsn-four {
+    padding: 0;
+}
+.related-posts .grid-view-news-area.vrsn-four .post-thumbnail {
+    margin-top: 0;
+	border-radius: 9px 9px 0px 0px;
+}
+.related-posts .grid-view-news-area.vrsn-four .post-content {
+	padding: 1.25rem;
+}
+.related-posts .grid-view-news-area.vrsn-four .post-content .entry-meta:nth-child(3) {
+    margin-bottom: 0; 
+}
+/*Comments*/
+.theme-comment-area.vrsn-four {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 1.25rem 1.563rem 1.25rem;
+	border-radius: 9px;
+	position: relative;
+	box-shadow: 2px 5px 20px rgb(0 0 0 / 7%);
+    transition: 0.4s;
+}
+.theme-comment-area.vrsn-four:hover {
+	transform: translateY(-7px);
+	border: 1px solid #fff;
+	box-shadow: 2px 5px 25px rgb(0 0 0 / 15%);
+}
+/*Comment Form*/
+.theme-comment-form.vrsn-four .comment-form {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 1.25rem 1.563rem 1.25rem;
+	border-radius: 9px;
+	position: relative;
+	box-shadow: 2px 5px 20px rgb(0 0 0 / 7%);
+    transition: 0.4s;
+}
+.theme-comment-form.vrsn-four .comment-form:hover {
+	transform: translateY(-7px);
+	border: 1px solid #fff;
+	box-shadow: 2px 5px 25px rgb(0 0 0 / 15%);
+}
+
+.theme-comment-area .comment-detail-title a {
+	text-decoration: none;
+}
+.reply a {
+    text-decoration: none !important;
+}
+.theme-comment-area .comment-detail p a {   
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+.theme-comment-area .comment-detail p a:hover, 
+.theme-comment-area .comment-detail p a:focus {
+    text-decoration-style: dotted;
+}
+
+/*--------------------------------------------------------------
+=>> Sidebar Widgets
+--------------------------------------------------------------*/
+
+.sidebar.vrsn-four .widget {
+	background-color: #fff;
+	padding: 1.25rem;
+	border-radius: 9px;
+	position: relative;
+	box-shadow: 2px 5px 20px rgb(0 0 0 / 7%);
+    -webkit-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+.sidebar.vrsn-four .widget:hover {
+	transform: translateY(-7px);
+	box-shadow: 2px 5px 25px rgb(0 0 0 / 15%);
+}
+/*List View Post Widget*/
+.list-view-post-widget .post.vrsn-four .post-thumbnail {
+    border-radius: 9px;
+}
+.widget .wp-block-heading a {   
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+.sidebar.vrsn-four .list-view-post-widget .post .entry-header .entry-title {
+    margin-top: 0;
+}
+
+/*--------------------------------------------------------------
+=>> Theme Breadcrumb Area
+--------------------------------------------------------------*/
+
+#wrapper .page-breadcrumb { 
+	background-color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+=>> Footer Section & Widgets
+--------------------------------------------------------------*/
+
+.site-footer-overlay::before {	
+	background-color: #000000;
+}
+.footer-sidebar .widget .wp-block-read-more {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    outline: none;
+}
+.footer-sidebar .widget .wp-block-read-more:hover, 
+.footer-sidebar .widget .wp-block-read-more:focus {
+    text-decoration-style: dotted;
+}
+.footer-sidebar .widget ul li a {
+	color: #e0e0e0;
+}
+
+/*--------------------------------------------------------------
+=>> Default Page Templates 
+--------------------------------------------------------------*/
+
+body.page-template-default .blog-grid-view-post .post.vrsn-four {
+    background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 1.25rem 1.563rem 1.25rem;
+	border-radius: 9px;
+	position: relative;
+	box-shadow: 2px 5px 20px rgb(0 0 0 / 7%);
+    transition: 0.4s;
+}
+body.page-template-default .blog-grid-view-post .sidebar .widget .list-view-post-widget .post {
+	border-top: none;
+	border-bottom: 1px solid #f1f1f1;
+    border-left: none;
+    border-right: none;
+	padding: 0.938rem 0 0.938rem 0;
+}
+body.page-template-default .blog-grid-view-post .sidebar .widget .list-view-post-widget .post:first-child {
+    padding-top: 0;
+	margin-bottom: 0;
+}
+body.page-template-default .blog-grid-view-post .sidebar .widget .list-view-post-widget .post:last-child {
+    padding-bottom: 0;
+	border-bottom: none;
+}
+
+/*--------------------------------------------------------------
+=>> Sidebar Update Released 
+--------------------------------------------------------------*/
+
+.wp-block-latest-posts li {
+    padding-bottom: 1rem;
+}
+.wp-block-latest-posts li .wp-block-latest-posts__post-date {
+    padding-top: 0.525rem;
+}
+.wp-block-archives li {
+	padding-bottom: 0.625rem;
+}
+.post .wp-block-categories-list li {
+	padding-bottom: 0.625rem;
+}
+.post .wp-block-list li {
+	padding-bottom: 0.625rem;
+}
+.post .wp-block-list li ul li:first-child {
+	padding-top: 0.625rem;
+}
+.post .wp-block-list li:last-child, 
+.post .wp-block-list li ul li:last-child {
+	padding-bottom: 0;
+}
+.wp-block-file .wp-block-file__button {
+	text-decoration: none;
+}
+.grid-view-news-area .post-content ol.wp-block-latest-comments .wp-block-latest-comments__comment {
+    border-bottom: 1px solid #f1f1f1;
+	padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+.post .wp-block-latest-posts.wp-block-latest-posts__list {
+	list-style: disc;
+}
+.post .wp-block-file {
+    font-size: 1rem;
+}
+.widget .wp-block-heading a {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+.sidebar .widget .wp-block-accordion-heading__toggle-title, 
+.sidebar .widget .wp-block-accordion-heading__toggle-icon {
+    display: flex;
+    border: 0 none;
+    margin: 0;
+}
+.sidebar .widget .wp-block-accordion-heading .wp-block-accordion-heading__toggle:hover,
+.sidebar .widget .wp-block-accordion-heading .wp-block-accordion-heading__toggle:focus {
+	border: 0px solid transparent;
+	background-color: transparent;
+}
+.sidebar .widget .widget_srmgmap_widget {
+	border: 0px solid transparent;
+	padding: 0;
+}
+.sidebar .widget .wp-block-accordion-heading .wp-block-accordion-heading__toggle {
+	border: 0px solid transparent;
+	background-color: transparent;
+}
+
+/*--------------------------------------------------------------
+=>> Footer Sidebar Update Released 
+--------------------------------------------------------------*/
+
+.footer-sidebar .widget .wp-block-accordion-heading__toggle-title, 
+.footer-sidebar .widget .wp-block-accordion-heading__toggle-icon {
+    display: flex;
+    border: 0 none;
+    margin: 0;
+}

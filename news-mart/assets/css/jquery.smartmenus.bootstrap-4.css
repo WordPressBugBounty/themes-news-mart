@@ -1,0 +1,20 @@
+/*
+Theme Name: News Mart
+Author: ThemeArile 
+Copyright (c) 2024 News Mart
+http://www.themearile.com
+Name: jquery.smartmenus.bootstrap-4.css
+*/
+
+/* Carets in collapsible mode (make them look like +/- buttons) */
+
+.navbar-dark {
+    border-top: 4px solid #202020;
+	background-color: #000000;
+}
+@media (min-width: 992px) {
+    .navbar.navbar-dark .nav .menu-item:hover .nav-link, .navbar.navbar-dark .nav .menu-item.active .nav-link {
+        background-color: #202020 !important;
+		color: #ffffff;
+    }
+}
