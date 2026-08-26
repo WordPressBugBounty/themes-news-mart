@@ -4,8 +4,8 @@ Author: ThemeArile
 Requires at least: WordPress 4.7
 Tested up to: WordPress 7.0
 Requires PHP: 5.6
-Stable tag: 2.2
-Version: 2.2
+Stable tag: 2.3
+Version: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, photography, custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, rtl-language-support, one-column, two-columns, full-width-template, sticky-post, right-sidebar, footer-widgets, grid-layout
@@ -73,6 +73,9 @@ https://pxhere.com/en/photo/1201905
 https://stocksnap.io/photo/sony-playstation-RCTXTLCXH6
 
 == Changelog ==
+
+@Version 2.3
+* We have updated the tags in style and readme file.
 
 @Version 2.2
 * We have fixed the breadcrumbs widget space in the footer widget area.
