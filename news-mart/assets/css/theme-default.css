@@ -504,6 +504,12 @@ input[type="submit"]:focus {
 .sidebar .widget .wp-block-verse a {
 	color: #007bff;
 }
+.theme-comment-area .comment-detail p a,
+.theme-comment-area .comment-detail p a:hover,
+.theme-comment-area .comment-detail p a:focus {
+	color: #007bff;
+}
+
 /*Footer Sidebar Update Released*/
 .footer-sidebar .widget .wp-block-heading a {
     color: #007bff;
